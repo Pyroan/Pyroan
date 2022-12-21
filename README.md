@@ -1,5 +1,4 @@
-# My Super Neat Gitted Hubbed Profile README
-
+# ![Hello This Is My Gitted Hubbed](./header.svg)
 ## Things you'll find here:
 - Neat/artsy visualizations of algorithms, [functions](https://github.com/pyroan/GravMap), and delicious delicious [data](https://github.com/Pyroan/AdventOfCode2021#visualizations)
 - [Jokes](https://github.com/pyroan/Unilang) that spiralled out of control

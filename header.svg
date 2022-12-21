@@ -1,20 +1,39 @@
 <?xml version="1.0" standalone="no"?>
 <svg width="1000" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <text id="leText" x="20" y="50" font-family="verdana" font-size="48" font-weight="bold"
+    rotate="7,-9,1,-10,-4,-2,-9,-5,7,4,6,1,1,-7,-5,-9,-9,4,7,-10,6,9,-6,12,-11,-7,-2,11,3,-5" fill="silver">
+    HELLO THIS IS MY GITTED HUBBED
+    <animate id="dance" attributeName="rotate"
+      to="-5,11,-2,10,2,1,12,3,-4,-6,-9,0,-4,7,6,11,6,-6,-9,8,-5,-6,3,-11,14,4,0,-12,-6,3" calcMode="discrete"
+      repeatCount="indefinite" dur="0.75" />
+  </text>
   <defs>
     <filter id="bright">
-      <feBlend in="StrokePaint" in2="FillPaint" mode="color-dodge" />
-      </filter>
+      <feFlood result="floodFill" flood-color="#5b0575" />
+      <feBlend in="floodFill" in2="SourceGraphic" mode="hue" />
+    </filter>
+    <mask id="leMask">
+      <use href="#leText" />
+    </mask>
   </defs>
-  <g filter="url(#bright)">
-  <text x="20" y="50" font-family="verdana" stroke="#7b2baa" stroke-width="3px" stroke-linejoin="round" font-size="48" font-weight="bold" rotate="-3,-14,12,2,7,-8,-13,-5,-2,14,10,13,-5,8,-10,12,0,-13,3,1,-5,-8,7,-5,0,1,-7,1,6,7" fill="#7b2baa">
-    <animate attributeName="stroke-width" from="0" to="10" repeatCount="indefinite" dur="3s"/>
-    <animate attributeName="stroke-opacity" from="1" to="0" repeatCount="indefinite" dur="3s"/>
-    <animate attributeName="stroke" from="#7b2baa" to="#edaa00" repeatCount="indefinite" dur="3s"/>
+  <text x="20" y="50" font-family="verdana" stroke="#7b2baa" stroke-width="3px" stroke-linejoin="round" font-size="48"
+    font-weight="bold" rotate="7,-9,1,-10,-4,-2,-9,-5,7,4,6,1,1,-7,-5,-9,-9,4,7,-10,6,9,-6,12,-11,-7,-2,11,3,-5"
+    fill="#7b2baa">
+    <animate attributeName="stroke-width" from="0" to="10" repeatCount="indefinite" dur="3s" />
+    <animate attributeName="stroke-opacity" from="1" to="0" repeatCount="indefinite" dur="3s" />
+    <animate attributeName="stroke" from="#7b2baa" to="#fff2cf" repeatCount="indefinite" dur="3s" />
+    <animate id="dance" attributeName="rotate"
+      to="-5,11,-2,10,2,1,12,3,-4,-6,-9,0,-4,7,6,11,6,-6,-9,8,-5,-6,3,-11,14,4,0,-12,-6,3" calcMode="discrete"
+      repeatCount="indefinite" dur="0.75" />
     HELLO THIS IS MY GITTED HUBBED
-</text>
 
-    <text x="20" y="50" font-family="verdana" font-size="48" font-weight="bold" rotate="-3,-14,12,2,7,-8,-13,-5,-2,14,10,13,-5,8,-10,12,0,-13,3,1,-5,-8,7,-5,0,1,-7,1,6,7" fill="#752605">
-    HELLO THIS IS MY GITTED HUBBED
-</text>
-        </g>
+  </text>
+  <g filter="url(#bright)" mask="url(#leMask)">
+    <!-- <text x="20" y="50" font-family="verdana" font-size="48" font-weight="bold"
+      rotate="-3,-14,12,2,7,-8,-13,-5,-2,14,10,13,-5,8,-10,12,0,-13,3,1,-5,-8,7,-5,0,1,-7,1,6,7" fill="#752605">
+      HELLO THIS IS MY GITTED HUBBED
+    </text> -->
+    <image href="glitter.jpeg" />
+  </g>
 </svg>

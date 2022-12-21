@@ -1,4 +1,4 @@
-# ![Hello This Is My Gitted Hubbed](./header.svg)
+# <img src="header.svg" alt="Hello This Is My Gitted Hubbed" width="100%" height="60">
 ## Things you'll find here:
 - Neat/artsy visualizations of algorithms, [functions](https://github.com/pyroan/GravMap), and delicious delicious [data](https://github.com/Pyroan/AdventOfCode2021#visualizations)
 - [Jokes](https://github.com/pyroan/Unilang) that spiralled out of control
